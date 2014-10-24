@@ -41,9 +41,10 @@ low_names<-c(tolower(names(Selectact))) # changes all column names to no capital
                         result <- gsub(pattern[i], replacement[i], result, ...)
                                    }
                           result }
-newlow_names <- mgsub(c("tb","tg","acc","fbody","-","gyro","freq","std","\\(","\\)","mag","\\,"), 
-      c("b","g","acceleration","transformedbody","","gyroscope","frequency", "standarddeviation","","","magnitude",""), low_names)
-                colnames(Selectact)<-newlow_names # asigns new column names to df
+pattern <- c("tb","tg","acc","fbody","-","gyro","freq","std","\\(","\\)","mag","\\,")
+replacement <-  c("b","g","acceleration","transformedbody","","gyroscope","frequency", "standarddeviation","","","magnitude","")
+newlow_names <- mgsub( pattern, replacement, low_names)
+colnames(Selectact)<-newlow_names # asigns new column names to df
 
 
 

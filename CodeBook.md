@@ -24,12 +24,13 @@ Subsequently, the body linear acceleration and angular velocity were derived in 
 Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing transformedbodyacceleration (xyz), transformedbodyaccelerationjerk (xyz), transformedbodygyroscope (xyz), transformedbodyaccelerationjerkmagnitude, transformedbodygyroscopemagnitude, transformedbodygyroscopejerkmagnitude. (Note the 'transformed' to indicate frequency domain signals). 
 These signals were used to estimate variables of the feature vector for each pattern:  
 'xyz' is used to denote 3-axial signals in the x, y and z directions.
-the time variables for all but the transformed measurements was taken out of the variable name since this is a common denominator.
+the time variable for all but the transformed measurements was taken out of the variable name since this is a common denominator.
+Meanfrequency and anglevariables were selected as mean variable although unclear if this variable mean should be inserted.
 
 data contains:
 - The total mean and standard deviation per acivity per person derived from the mean estimated body acceleration, gravity and gyroscope. The mean body accelerations were derived from the triaxial acceleration from the accelerometer (total acceleration).
 - mean triaxial Angular velocity from the gyroscope. 
-- 86 variable means (46variables) or standarddeviation (33 variables) with time and frequency (transformed) domain variables. 7 anglebodymean and anglegravitymean variables are included in the dataset.
+- 86 variable means (46variables, including frequency means) or standarddeviation (33 variables) with time and frequency (transformed) domain variables. 7 anglebodymean and anglegravitymean variables are included in the dataset (since these are variable means, although it was unclear if they had to be selected).
 - 1 activity variabel containing: walk,walkdown, walkup, sit, lay, stand. (6 activties)
 - 1 subject variabel who carried out the experiment. (30 subjects)
 - dim df: 88 variables and 180 measurements

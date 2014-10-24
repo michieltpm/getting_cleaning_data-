@@ -60,7 +60,7 @@ MAKE ONE BIG DF
 - rbinds subjtrain and subjtest to get Subjtotal
 - column binds Xtotal, Ytotal and Subjtotal to total
 MAKE SELECTION OF ALL MEAN AND STD CONTAINING COLUMNS
-- Selects all columns containing mean,std or Mean
+- Selects all columns containing mean,std or Mean. This includes meanfrequency and anglevariables since they are variable means, unclear if this variable mean should be inserted.
 - columnbinds the selected columns in tbl_df (Selectmeanstd)
 ASSIGN DESCRIPTIVE ACTIVITY NAMES TO DF 
 - generates vector containing descriptive activity names instead of numbers

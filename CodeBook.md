@@ -35,17 +35,17 @@ data contains:
 - dim df: 88 variables and 180 measurements
 
 mean: 					mean value
-standarddeviation: 			Standard deviation
-angle: 					Angle between vectors.
-magnitude				magnitude of the three-dimensional signals (xyz) calculated using the Euclidean norm
-jerk: 					body linear acceleration and angular velocity derived in time
-jerkmagagnitude: 			magnitude of jerk(xyz) three-dimensional signals calculated using the Euclidean norm
-gravity: 				acceleration signals separated into body and gravity acceleration signals, in this case gravity
-body: 					acceleration signals separated into body and gravity acceleration signals, in this case body
-gyroscope: 				gyroscope measurements
-xyz: 					3-axial signals from accelerometer and gyroscope
-bodybody:				variable present in the original dataset, probably a notation mistake: bodybody needs to be body. 
-meanfrequency:				the mean frequency domain signals from the Fast Fourier Transformation (FFT)
+- standarddeviation: 			Standard deviation
+- angle: 					Angle between vectors.
+- magnitude				magnitude of the three-dimensional signals (xyz) calculated using the Euclidean norm
+- jerk: 					body linear acceleration and angular velocity derived in time
+- jerkmagagnitude: 			magnitude of jerk(xyz) three-dimensional signals calculated using the Euclidean norm
+- gravity: 				acceleration signals separated into body and gravity acceleration signals, in this case gravity
+- body: 					acceleration signals separated into body and gravity acceleration signals, in this case body
+- gyroscope: 				gyroscope measurements
+- xyz: 					3-axial signals from accelerometer and gyroscope
+- bodybody:				variable present in the original dataset, probably a notation mistake: bodybody needs to be body. 
+- meanfrequency:				the mean frequency domain signals from the Fast Fourier Transformation (FFT)
 
 
 ALL VARIABLES
